@@ -167,6 +167,7 @@ body{
 }
 .imgbottom .slider .container li h2{
     padding-bottom: 20px;
+    margin-top: 30px;
     font-weight: 900;
 }
 .imgbottom .slider .container li a{
@@ -177,6 +178,11 @@ body{
     text-align: center;
     font-size: 16px;
     border-radius: 5px;
+}
+.imgbottom .slider .container .pic{
+    width: 150px;   
+    height: 150px;
+    margin: auto;
 }
 .imgbottom .container{
     width: 1200px;
@@ -313,15 +319,18 @@ body{
 .title{
     width: 1200px;
     text-align: center;
-    margin-bottom: 30px;
+    
+    margin: auto;
 }
 .title h2{
-    margin-top: 100px;
+    margin-top: 60px;
     font-size: 18px;
     font-weight: 900;
+    
 }
 .product-list{
     background-color: #fffcda;
+   margin-top: 30px;
 }
 
 .product-list .container{
@@ -745,6 +754,20 @@ body{
     line-height: 1.6;
   
 }
+.backtotop img{
+    width: 100%;
+    object-fit: cover;
+}
+.backtotop .pic{
+    width: 150px;
+}
+.backtotop{
+    position: fixed;
+    right: -3%;
+    bottom: 0;
+    z-index: 2;
+}
+
 .aboutus-txt .container{
     width: 1200px;
     display: flex;
@@ -763,6 +786,7 @@ body{
 .aboutus-menu .pic{
     height: 200px;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 .aboutus-menu .item {
     box-sizing: border-box;
@@ -801,21 +825,143 @@ select {
   .product-demo{
       margin-top: 100px;
      
-     
   }
+  .product-demo .container{
+      width: 1200px;
+      margin: auto;
+      display: flex;
+  }
+  .product-demo .main{
+    width: 20%;
+    box-sizing: border-box;
+  }
+  .product-demo .main :hover{
+    cursor: pointer;
+    background-color: rgb(228, 222, 222);
+}
+  .product-demo .main > ul{
+      position: sticky;
+      top: 100px;
+  }
+  .product-demo .main li{
+      width: 100%;
+      background-color: #f6f6f6;
+      text-align: center;
+      border: 1px #d8dfe3 solid;
+      padding: 20px 0px;
+      box-sizing: border-box;
+  }
+  .product-demo .sealcard{
+      width: 80%;
+      margin: 0px 30px;
+      box-sizing: border-box;
+  }
+  .product-demo .carditem{
+      display: flex;
+  }
+  .product-demo .carditem .pic,
+  .product-demo .carditem ul,
+
+  .product-demo .buttom{
+      width: 33.333333%;
+      box-sizing: border-box;
+      
+  }
+  
+  .product-demo .container .main  li .img img{
+      width: 100%;
+  }
+  .product-demo .pic img{
+      width: 100%;
+  }
+  .product-demo .carditem ul li{
+      list-style: disc;
+      margin: 20px;
+  }
+  .product-demo .buttom{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+
+  .product-demo .buttom :nth-child(1){
+    border-color: #24a09a;
+    color: #fff;
+    background-color: #24a09a;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .product-demo .buttom :nth-child(2){
+    border: 1px solid #24a09a;
+    color: #24a09a;
+    background-color: transparent;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    
+  }
+  .product-demo .sealcardfun :hover{
+      color: #009e96;
+      cursor: pointer;
+      border-bottom: 3px solid ;
+  }
+  .product-demo .sealcardfun{
+      display: flex;
+      justify-content: space-around;
+      margin: 40px 0px;
+      border-bottom: 1px #aaa solid;
+      padding-bottom: 10px;
+  }
+  .product-demo .bannerfooter img{
+      width: 80%;
+      vertical-align: bottom;
+  }
+  .product-demo .bannerfooter{
+      text-align: center;
+      width: 100%;
+  }
+  .product-demo .cardbtn{
+    text-align: center;
+    margin-top: 40px;
+    
+  }
+  .product-demo .cardbtn a{
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid #24a09a;
+    color: #24a09a;
+    background-color: transparent;
+  }
+  .product-demo .cardbtn :hover{
+      color: white;
+    background-color:#24a09a; 
+    cursor: pointer;
+    border-bottom: 3px solid
+  }
+
+  .product-demo .sealcard h2{
+      font-size: 20px ;
+      color:#24a09a;
+      font-weight: 900;
+      margin:  15px  5px;
+  }
+  
+
   .mainimg{
       margin-top: 100px;
   }
-  .product-demo .container h1{
-     text-align: center;
-     font-size: 28px;
-     color: #007979;
-  }
-  .product-demo .container{
-     width: 1200px;
-     margin: auto;
-  }
 
+.sealcard .pic{
+    width: 250px;
+    margin: auto;
+}
+.sealcard img{
+    width: 100%;
+}
 
 .pruduct{
     margin-top: 140px;
@@ -842,42 +988,8 @@ select {
    min-width: 180px;
 }
 
-  .product-demo .container .pic{
-    margin: auto;
-    width: 25%;
-}
-.product-demo .container .pic img{
-    width: 100%;
-}
 
-  .product-demo .container ul{
-    position: absolute;
-    top: 30%;
-    right: 25%;
-  }
-  .product-demo .container .sealcard{
-      display: flex;
-      position: relative;
-  }
-  .aboutus-txt .container .aboutus-menu .item h2{
-     line-height: 1.6;
-  }
-  .product-demo .container .know-more a{
-    color: black;
-    text-decoration: none;
-    margin: auto;
-    width: 160px;
-    padding: 4px 30px 4px 4px;
-    font-size: 14px;
-    border: 1px solid #eee;
-    height: 30px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: url(https://tinyurl.com/22s26jw9) 100% / 15% no-repeat #ccc;
-  }
 
-  
  .mainnav .logo a{
       text-decoration: none;
  }
@@ -1048,7 +1160,6 @@ select {
 }
 
 .sealbanner .container{
-    width: 1200px;
     position: relative;
     margin: auto;
     background-image: url(../pic/backgroundigray.png);
@@ -1058,7 +1169,7 @@ select {
     width: 100%;
    opacity: 0.9;
    margin-top: 100px;
-  
+vertical-align: bottom;
 }
     
 
@@ -1106,8 +1217,7 @@ select {
 .personal .container{
     width: 1200px;
     margin: auto;
-   display: flex;
-   
+
 }
 
 .personal .container .pic{
@@ -1276,6 +1386,20 @@ select {
     position: static;
     height: auto;
 }
+.logoin .container .coutNo{
+    padding:5px 15px; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    padding:5px 15px; 
+    border:2px 
+    black solid;
+    border: 3px solid #555;
+    
+}
+
+
 .mainnav .container .login li{
     box-sizing: border-box;
     outline: 0;
