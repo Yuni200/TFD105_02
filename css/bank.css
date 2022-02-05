@@ -8,7 +8,7 @@ body{
     position: fixed;
     top: 0px;
     left: 0;
-    z-index: 2;
+    z-index: 20000;
     width: 100%;
 }
 .mainnav .logo .pic{
@@ -49,6 +49,7 @@ body{
 }
 .mainnav .navbar li{
     padding: 0 20px;
+   
 }
 
 .mainnav .login{
@@ -59,7 +60,7 @@ body{
 
 .mainnav .login li{
     padding:0 10px;
-       
+    margin: 0 5px ;
 }
 
 .mainnav .login a{
@@ -90,7 +91,7 @@ body{
     font-size: 20px;
     font-weight: 900;
     cursor: pointer;
-
+    
 }
 
 .mainimg .container .txt-1{
@@ -141,31 +142,89 @@ body{
     margin: auto;
     background-size: cover;
 }
-
+.imgbottom{
+    margin-top: 60px;
+}
 .imgbottom .slider{
     width: 100%;
-    height: 200px;
-    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     /* border: solid 1px red; */
 }
-.imgbottom .container .slider li{
+.imgbottom .slider .container li{
     width: 25%;
     box-sizing: border-box;
     padding: 30px;
+    margin: 20px;
+    color: white;
+    line-height: 1.6;
+    background-color: #3a393880;
+}
+.imgbottom .slider .container li p{
+    padding-bottom: 20px;
+}
+.imgbottom .slider .container li h2{
+    padding-bottom: 20px;
+    font-weight: 900;
+}
+.imgbottom .slider .container li a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
 }
 .imgbottom .container{
     width: 1200px;
     margin: auto;
     height: 100%;
+    display: flex;
 }
 
-.imgbottom img{
+.imgbottom .pic img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     vertical-align: bottom;     
-    border-radius: 10px;
+}
+.imgbottom .banner{
+    position: relative;
+}
+.imgbottom .bannerup img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+.imgbottom .bannerup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform: rotate(180deg);
+}
+.imgbottom .bannerdown img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+.imgbottom .bannerdown{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
 
+
+.imgbottom .banner> img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
 }
 
 .dot1 {
@@ -193,10 +252,10 @@ body{
     /* border: 1px red solid; */
     display: flex;
     justify-content: center;
-    
+    margin: 5px 0px;
 }
 .buttons .dot2{
-    margin:0 5px;
+    margin:0 10px;
 }
 .pruduct{
     margin-top: 70px;
@@ -251,123 +310,198 @@ body{
     width: 100%;
     height: 50%;
 }
-.product-list{
-    margin-top: 60px;
+.title{
+    width: 1200px;
+    text-align: center;
+    margin-bottom: 30px;
 }
-.product-list .container{
-   width: 1200px;
-   margin: auto;
-   padding: 60px 0px;
-   display: flex;
-}
-.product-list .main {
-    font-size: 18px;
-    width: 50; 
-    box-sizing: border-box;
-    color: #928f8f;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-.product-list .main-1{
-    width: 50; 
-    box-sizing: border-box;
-    margin: 50px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-left: black 3px solid;
-    border-style:dotted;
-    border-color:#928f8f;
-
-}
-.product-list .main-1 p{
-    font-size: 12px;
-    margin-left: auto;
-    margin: 5px;
-}
-
-
-.news{
+.title h2{
     margin-top: 100px;
+    font-size: 18px;
+    font-weight: 900;
 }
-.news .container .item .buttom-menu .buttons-1{
-    display: flex;
-   text-align: center;
+.product-list{
+    background-color: #fffcda;
 }
 
-
-.news .container{
+.product-list .container{
     width: 1200px;
     margin: auto;
     display: flex;
 }
-
-
-.news .container h2{
-    text-align: left;
-    font-size: 28px;
+.product-list .item-40 h2{
+    padding: 0 10px 0 5px;
+    color: #009e96;
+    font-size: 18px;
+    font-weight: 900;
+}
+.product-list .item-40 h3{
+    color: #009e96;
+    font-size: 18px;
+    font-weight: 900;
+}
+.product-list .item-40{
+    width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-list .item-60{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding:36px 20px;
+    line-height: 1.6;
+    font-size: 16px;
     font-weight: 700;
 }
-.news .container .txt{
-    margin-top: 30px;
-    
+.product-list  .item-60 h2::before{
+    content: "";
+    position: absolute;
+    top:15%;
+    left: -5%;
+    border-left: dotted 3px #009e96;
+    height: 150%;
 }
-.news .container .item{
- 
-    width: 50%;
+.product-list  .item-60 h2{
+    position: relative;
 }
-.news .container .item a{
+.product-list .item-60 a{ 
+    margin-left: auto;
+    color: #009e96;
     text-decoration: none;
-    justify-content:space-between;
 }
 
-.news .container .item  .menu-a{
-    display: flex;
+.product-list .pic{
+    width: 27px; 
+    height: 27px;
 }
 
-.news .container .item li p{
-    text-align: center;
-}
-.news .container .item .buttom-menu {
-    display: flex;
-    text-align: center;
-}
-.news .container .item .buttom-menu .pic{
-    width: 80 px;
-}
-
-.news .container .item .buttom-menu .pic img{
+.product-list .pic img{
     width: 100%;
 }
 
 
-.product-list{
-    background-size: cover;
-    background-color:rgb(243, 243, 171) ;
+.imgbottom .container{
+    width: 1200px;
 }
-.product-list img{
-    width: 30%;
+.newsproduct{
+    width: 40%;
+    box-sizing: border-box;
+    padding: 20px;   
+    margin-top: 100px;
+    
 }
-.product-list .container ul{
-   display: flex;
+.newsproduct ul{
+    line-height: 2;
+    margin-top: 10px;
+    list-style-type:disc;
 }
-.product-list li p{
-    padding-top: 60px;
-    font-size: 16px;
+.news .newsproduct .more{
+    text-align: right;
+    cursor: pointer ;
     color: #009e96;
-    font-weight:900;
 }
-.product-list>h2{
-    text-align: center;
-    padding-top:30px;
+
+.servicer{
+    width: 60%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.news .container{
+    width: 1200px;
+    margin: auto;
+}
+.news .container .newsproduct  h2{
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 900;
 }
+.news .container .servehead h2{
+    font-size: 18px;
+    font-weight: 900;
+}
+.news .item{
+    display: flex;
+}
+.news .servehead span{
+    background-color: #EDEDED;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer ;
+}
+.news .banksevericon {
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+}
+.banksevericon ::before{
+    content: '';
+    position: absolute;
+    background-image: url(../Icon/arrow2.png);
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,0);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    
+}
+
+.banksevericon ::after{
+    content: "";
+    position: absolute;
+    background-image: url(../Icon/arrow1.png);
+    top: 50%;
+    right: 0;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    transform: translate(-50%,0);
+    cursor: pointer;
+}
+.news .banksevericon img{
+    width: 100%;
+}
+.news .banksevericon .txt{
+    text-align: center;
+    white-space: nowrap;
+}
+.news .banksevericon li{
+    margin: 0 15px;
+    padding: 0 15px;
+}
+.news .servehead{
+    display: flex;
+    justify-content: space-between;
+}
+.news .dotitems{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+
+.news .dotitems .dot{
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+    margin:  0 5px ;
+    cursor: pointer ;
+    
+    
+}
+
+
 .Transfer-banner{
     margin-top: 60px;
 }
@@ -682,8 +816,9 @@ select {
      margin: auto;
   }
 
+
 .pruduct{
-    margin-top: 100px;
+    margin-top: 140px;
 }
 
 .buydoller .container{
@@ -1020,21 +1155,7 @@ select {
 }
 
 .personal .container >h2{
-    -webkit-text-size-adjust: 100%;
-    font-family: Arial,Helvetica,sans-serif,"Microsoft JhengHei";
-    font-size: 14px;
-    line-height: 1.5;
-    box-sizing: border-box;
-    position: relative;
-    padding-top: 26px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 1px solid #b1d6ff;
-    background-image: linear-gradient(203deg,#fff 57%,#e4f1ff);
-    text-align: center;
-    color: #4a4a4a;
-    box-shadow: 0 0 10px 0 #a9aeb1;
+    
 }
 
 
@@ -1078,30 +1199,7 @@ select {
     font-size: 60px;
 }
 
-.loanbanner-1 .container .txt a{
-    -webkit-text-size-adjust: none;
-    box-sizing: border-box;
-    text-decoration: none;
-    margin: 0;
-    font: inherit;
-    vertical-align: baseline;
-    outline: none;
-    border-radius: 0;
-    border: none;
-    appearance: none;
-    cursor: pointer;
-    display: inline-block;
-    max-width: 280px;
-    width: 100%;
-    color: #fff;
-    font-size: 20px;
-    line-height: 1.3;
-    padding: 26px 5%;
-    text-align: center;
-    transition: all .3s ease;
-    background: #a8a8a8;
-    margin-top: 25px;
-}
+
 
 .loanbanner-2 {
     margin-top: 100px;
