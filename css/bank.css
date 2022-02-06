@@ -629,11 +629,13 @@ body{
 .Product-Detail-Page .txt h1{
     font-size: 26px;
     font-weight: 500;
+    mra
 }
 .Product-Detail-Page .txt{
     text-align: center;
     /* background-color: brown; */
     padding-bottom: 20px;
+    padding: 20px 0;
     line-height: 1.6;
     background-color: #c5dcd9;
     position: relative;
@@ -914,6 +916,7 @@ select {
       margin: 40px 0px;
       border-bottom: 1px #aaa solid;
       padding-bottom: 10px;
+      height: 20px;
   }
   .product-demo .bannerfooter img{
       width: 80%;
