@@ -76,7 +76,7 @@ body{
 .mainimg .container .txt{
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 20%;
     font-weight: 900;
     transform: translate(0%,-50%);
 }
@@ -91,6 +91,22 @@ body{
     font-weight: 900;
     cursor: pointer;
 
+}
+.mainnav .navbar :hover{
+    text-decoration: none;
+    color:rgb(255, 204, 36);
+    
+}
+.mainimg .container button:hover{
+    text-decoration: none;
+    color:rgb(2, 2, 2);
+    background: orange;
+    
+}
+
+
+.mainnav .navbar li :hover{
+    color:rgb(255, 204, 36);
 }
 .mainimg h2{
     font-size: 40px;
@@ -787,7 +803,7 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url(https://tinyurl.com/22s26jw9) 100% / 15% no-repeat #ccc;
+    background:  100% / 15% no-repeat #ccc;
 
    }
    .aboutus-txt .container .aboutus-search{
@@ -1148,6 +1164,7 @@ select {
     }
 .reset{
     background-color: rgb(224, 224, 224);
+    margin-top: 100px;
 }
    
 .reset .container{
@@ -1155,6 +1172,7 @@ select {
     margin: auto;
     display: flex;
     box-sizing: border-box;
+    
     }
 .reset .item{
     width: 50%;
@@ -1501,4 +1519,56 @@ vertical-align: bottom;
     border-radius: 30px;
     }
 
-   
+   /* hover 專區 */
+   .mainimg .container button:hover{
+    text-decoration: none;
+    color:rgb(2, 2, 2);
+    background: orange;
+    
+}
+    .mainnav .container .login h2:hover{
+            text-decoration: none;
+            color:rgb(2, 2, 2);
+            background: orange;
+            
+        }
+        .mainnav .container .login a:hover{
+            text-decoration: none;
+            color:rgb(2, 2, 2);
+            background: orange;
+            
+        }
+        .news .container .item .newsproduct .more h2:hover{
+                
+                color:rgb(19, 18, 18);
+                cursor: pointer; 
+            }
+
+        .product-list .container .item-60 a:hover{
+                color: black;
+                cursor: pointer; 
+        }
+        .imgbottom .banner .container a:hover{
+            color: rgb(8, 247, 247);
+                cursor: pointer; 
+                border: rgb(8, 247, 247) 1px solid;
+        }
+        .fotter-1 .container .item .ecoutmer a:hover{
+            color: orange;
+        }
+        .fotter-1 .container .item .ecoutmer-1 a:hover{
+            color: orange;
+        }
+        .fotter-1 .container .item .wrap .ecoutmer-2 a:hover{
+            color: orange;
+        
+        }
+
+        .sealbanner .container .txt button:hover{
+            color: black;
+        }
+        .product-demo .container .sealcard .carditem .buttom a:hover{
+            color: black;
+        }
+  
+        

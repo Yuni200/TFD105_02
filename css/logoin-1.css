@@ -1703,3 +1703,47 @@ vertical-align: bottom;
     border: #009d97 solid 3px;
     justify-content: space-between;
 }
+
+.mainimg .container button:hover{
+    text-decoration: none;
+    color:rgb(2, 2, 2);
+    background: orange;
+    
+}
+    .mainnav .container .login h2:hover{
+            text-decoration: none;
+            color:rgb(2, 2, 2);
+            background: orange;
+            
+        }
+        .mainnav .container .login a:hover{
+            text-decoration: none;
+            color:rgb(2, 2, 2);
+            background: orange;
+            
+        }
+        .news .container .item .newsproduct .more h2:hover{
+                
+                color:rgb(19, 18, 18);
+                cursor: pointer; 
+            }
+
+        .product-list .container .item-60 a:hover{
+                color: black;
+                cursor: pointer; 
+        }
+        .imgbottom .banner .container a:hover{
+            color: rgb(8, 247, 247);
+                cursor: pointer; 
+                border: rgb(8, 247, 247) 1px solid;
+        }
+        .fotter-1 .container .item .ecoutmer a:hover{
+            color: orange;
+        }
+        .fotter-1 .container .item .ecoutmer-1 a:hover{
+            color: orange;
+        }
+        .fotter-1 .container .item .wrap .ecoutmer-2 a:hover{
+            color: orange;
+        
+        }
