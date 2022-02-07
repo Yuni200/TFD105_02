@@ -27,7 +27,7 @@ body{
 
 .mainnav .container{
     display: flex;
-    height: 100px;
+    height: px;
     margin: auto;
     justify-content: space-between;
     align-items: center;
@@ -45,10 +45,19 @@ body{
 }
 .mainnav .navbar a{
     text-decoration: none;
-    color: black;
+
+}
+.mainnav .navbar :hover{
+    text-decoration: none;
+    color:rgb(255, 204, 36);
+    
 }
 .mainnav .navbar li{
     padding: 0 20px;
+   
+}
+.mainnav .navbar li :hover{
+    color:rgb(255, 204, 36);
    
 }
 
@@ -92,6 +101,10 @@ body{
     font-weight: 900;
     cursor: pointer;
     
+}
+.mainimg .container .txt button:hover{
+    color:rgb(0, 0, 0);
+   background-color: rgb(255, 255, 255);
 }
 
 .mainimg .container .txt-1{
@@ -605,14 +618,16 @@ body{
 }   
 .Product-Detail-Page img{
     width: 100%;
-
 }
+
 .Product-Detail-Page .btn .pic{
     width: 10px;
     border-radius: 10px;
     margin:  0 5px; 
-    
-   
+}
+
+
+
 }
 .Product-Detail-Page .btn{
     display: flex;
@@ -676,6 +691,7 @@ body{
 .fotter{
    margin-top: 60px;
 }
+
 
 
 .fotter .pic {
@@ -996,75 +1012,136 @@ select {
  .mainnav .logo a{
       text-decoration: none;
  }
- .open-acccount-opnemain .container{
+.content .container{
+   
      width: 1200px;
+     height: auto;
     margin: auto;
-    background-color: rgba(255, 0, 0, 0.555);
+    color: rgb(10, 10, 10);
+    position: relative;
+    margin-bottom: 100px;
  }
- 
- .open-acccount-opnemain .container>h2{
-     width: 50px;
-     color:rgb(245, 241, 241);
-     font-weight: 700;
-     
- }
- .open-acccount-opnemain .container>h3{
-     margin: 30px 30px;
-     font-weight: 700;
-     display: flex;
-     
- }
- .open-acccount-opnemain .container .box{
-     background-color: white;
-     border-radius: 30px 30px 30px;
-     border: solid 3px black;
-     margin-top: 100px;
-     display: flex;
+ .content .mainimg .pic{
+     width:1200px ;
+     height: 500px;
 
  }
- .open-acccount-opnemain .container .item{
-    width: 33.333333%;
- }
- .open-acccount-opnemain .container .box >h2{
-    font-size: 18px;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 40px;
-} 
-.open-acccount-opnemain .container .box .pic img{
+ .content .mainimg img{
     width: 100%;
-    
-}
-.open-acccount-opnemain .container .box .pic{
-    width: 100px;
-   box-sizing: border-box;
-}
-.open-acccount-opnemain .container .item3{
-    text-align: center;
- 
-    text-decoration: none;
-    margin-top: 130px;
-}
-.open-acccount-opnemain .container a{
-    background-color: red;
-    color: white;
-    margin: 10px 5px;
-    font-weight: 500;
-    border-radius: 30px;
-    padding: 5px 30px ;
-    text-decoration: none;
-    }
-    
-.open-acccount-opnemain .open-acccount-opnemain-w p{
-        background-color: white;
-        z-index: 2;
-       padding-top: 90px;
-       border: red 3px solid;
-    }
 
+}
+
+ .content .container .bacnword{
+     padding-left: 20px;
+     padding-bottom: 25px;
+     font-family: Arial;
+     letter-spacing: 1.2px;
+     line-height: 30px;
+ }
+ .content .container h1{
+     font-family: 'Times New Roman';
+     font-size: 50px;
+     padding-left: 20px;
+     margin-top: 9%;
+     letter-spacing: 2px;
+ }
+.content .container .cn{
+    width: 160px;
+    height: 40px;
+    background-color: #ffb000;
+    border:none;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.content .container .cn a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: .3e ease;
+}
+.cn:hover {
+    background-color: black;
+}
+.content span{
+    background-color: orange;
+    font-size: 60px;
+}
+
+.content .form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0),rgba(0,0,0,)50%);
+    position: absolute;
+    top: -20px;
+    left:870px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.content h2{
+    width: 220px;
+    font-family: Arial;
+    color: orange;
+    font-size: 22px;
+    background-color: #3a3938;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px ;
+}
+
+.content .form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ffb000;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.content .form:focus{
+    outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+.content .container .btn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: #fff;
+    transform: 0.4 ease;
+}
+.btn:hover{
+    background: #fff;
+    color: #ff7200;
+
+}
+.content .container .btn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.form link{
+    font-family: Arial, Helvetica, sans-serif;
+    font: size 17px;
+    padding-top: 20px;
+    text-align: center;
+
+}
 .logoin{
-        margin-top: 100px;
-    }
+        margin-top: 200px;
+        margin-bottom:500px   
+     }
         
 .logoin .pic img{
         width: 100%;
@@ -1078,9 +1155,8 @@ select {
     }
 .logoin  img{
         width: 100%;    
-        
-
     }
+
 
 .logoin .container h1{
         width: 50%;
@@ -1102,65 +1178,97 @@ select {
     }
 .logoin .container .from{
     position: absolute;
-    right: 50%;
-    top: 50%;
+    right: 60%;
+    top: 25%;
     }
+.reset{
+    background-color: rgb(224, 224, 224);
+}
    
 .reset .container{
-        width: 1200px;
-        margin: auto;
-        margin-top: 100px;
-        background-color: #c8caca;
-    }
-.reset .wrp{
-        display: flex;
-        text-align: center;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    box-sizing: border-box;
     }
 .reset .item{
-        margin: auto;
-    }
-.reset .item .pic{
-        width: 100px;
-    }
-.reset .item img{
-        width: 100%;
-    }
-.reset .container a{
-    border: 2px solid #777979;
-    background-color: #007172;
-    border-radius: 50px;
-    color: white;
-    display: flex;
-    align-items: center;
+    width: 50%;
+    margin: 50px 50px;
     justify-content: center;
-    white-space: nowrap;
-    margin: 0 auto;
-    width: 100%;
-    font-size: 1.4rem;
-    max-width: 250px;
-    height: 50px;
+    border: rgb(255, 255, 255) 3px solid;
+    background-color: white;
+    border-radius: 50px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.reset .item h2{
+    cursor: default;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    text-align: center;
+    font-family: "微軟正黑體","Microsoft JhengHei",'LiHei Pro',Arial,Helvetica,sans-serif,\5FAE\8EDF\6B63\9ED1\9AD4 \9!important;
+    padding: 0;
+    color: #4c5141;
+    box-sizing: border-box;
+    line-height: 1.5;
+    margin: 5px 0 5px 0;
+}
+.reset  h2{
+  text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    cursor: default;
+    color: #009d97;
+    line-height: 2;
+}
+.reset .item p{
+   margin: 5px;
+   padding: 5px;
+   line-height: 2;
+   font-size: 14px;
+}
+.reset .item a{
+  text-decoration: none;
+  color: #009d97;
+ }
+
+.reset .item h3{
+    text-align: center;
+      margin-bottom: 5px;
+      font-size: 16px;
+      cursor: default;
+      line-height: 2;
+  }
+.reset .item button{
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    font-family: "微軟正黑體","Microsoft JhengHei",'LiHei Pro',Arial,Helvetica,sans-serif,\5FAE\8EDF\6B63\9ED1\9AD4 \9!important;
+    -webkit-text-size-adjust: none;
+    cursor: pointer!important;
+    box-sizing: border-box;
+    line-height: 24px!important;
+    font-weight: normal;
+    color: #fff!important;
+    text-align: center;
     text-decoration: none;
+    font-size: 16px!important;
+    background: #009d97;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    padding: 10px 0;
+    margin: 0 auto;
+    width: 100px;
+    display: block;
 }
-.reset .container .wrap .item h2{
-    color: black;
-    font-size: 2 em;
-}
-.reset .container .wrap .item h3{
-    font-size: 0.7rem;
+.reset .container .item .pic{
+    width: 50px;
+    display: flex;
+    margin:auto;
 }
 
-.reset .container .txt{
-    margin-top: 30px;
-    color: black;
-    font-size: 3 em;
-    text-align: center;
+.reset .container .item .pic img{
+    width: 100%;
 }
-.reset>h2{
-    margin: auto;
-    text-align: center;
-    font-size: 18px;
-    font-size:2.5em;
-}
+
 
 .sealbanner .container{
     position: relative;
@@ -1388,20 +1496,26 @@ vertical-align: bottom;
     align-items: center;
     position: static;
     height: auto;
+    
 }
 .logoin .container .coutNo{
-    padding:5px 15px; 
+    padding:30px 30px; 
     border:0 none;
     cursor:pointer;
+    margin: 30px;
     -webkit-border-radius: 5px;
     border-radius: 5px; 
     padding:5px 15px; 
-    border:2px 
-    black solid;
+    border:2px  black solid;
     border: 3px solid #555;
+    background-color: rgb(175, 174, 174);
+    width: 160px;
     
 }
-
+.logoin .container .forgetid a{
+    text-decoration: none;
+    cursor: pointer;
+} 
 
 .mainnav .container .login li{
     box-sizing: border-box;
@@ -1425,3 +1539,4 @@ vertical-align: bottom;
     border-radius: 30px;
     }
 
+   
